@@ -3,4 +3,4 @@ mkdir 2-new_project
 cd 2-new_project
 dotnet new console
 dotnet build
-dornet run
+dotnet run
