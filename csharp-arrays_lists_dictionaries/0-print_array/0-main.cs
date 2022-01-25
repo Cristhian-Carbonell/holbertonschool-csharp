@@ -8,7 +8,7 @@ namespace csharp_arrays_lists_dictionaries
         {
             int[] newArray;
 
-            newArray = Array.CreatePrint(10);
+            newArray = Array.CreatePrint(5);
             Console.WriteLine("Array Length: " + newArray.Length);
             Console.WriteLine("----------------");
             newArray = Array.CreatePrint(16);
