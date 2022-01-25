@@ -5,7 +5,7 @@ class List
 {
     public static int MaxInteger(List<int> myList)
     {
-        int number;
+        int number = -1;
         int end = myList.Count - 1;
 
         if (myList.Count == 0) {
