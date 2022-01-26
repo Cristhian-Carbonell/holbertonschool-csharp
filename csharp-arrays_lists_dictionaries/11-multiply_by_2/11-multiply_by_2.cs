@@ -8,7 +8,7 @@ class Dictionary
         Dictionary<string, int> newDict = new Dictionary<string, int>();
 
         foreach(KeyValuePair<string, int> kvp in myDict) {
-            newDict.Add(kvp.Key, kvp.Value);
+            newDict.Add(kvp.Key, kvp.Value * 2);
         }
         
         return newDict;
