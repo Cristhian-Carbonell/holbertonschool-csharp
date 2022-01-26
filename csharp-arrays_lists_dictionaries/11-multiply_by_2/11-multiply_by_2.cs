@@ -5,18 +5,12 @@ class Dictionary
 {
     public static Dictionary<string, int> MultiplyBy2(Dictionary<string, int> myDict)
     {
-        int[] number = new int[myDict.Count];
-        string[] name = new string[myDict.Count];
-        int count = 0;
+        Dictionary<string, int> newDict = new Dictionary<string, int>();
+
         foreach(KeyValuePair<string, int> kvp in myDict) {
-            name[count] = kvp.Key;
-            number[count] = kvp.Value * 2; 
-            count++;
-        }
-        for (int i = 0; i < name.Length; i++) {
-            myDict[name[i]] = number[i];
+            newDict.Add(kvp.Key, kvp.Value);
         }
         
-        return myDict;
+        return newDict;
     }
 }
