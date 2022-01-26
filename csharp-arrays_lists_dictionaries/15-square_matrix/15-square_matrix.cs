@@ -4,11 +4,11 @@ class Matrix
 {
     public static int[,] Square(int[,] myMatrix)
     {
-        int number = myMatrix.Length / 3;
-        int[,] newMatrix = new int[number,number];
-
-        for (int i = 0; i < number; i++) {
-            for (int j = 0; j < number; j++) {
+        int row = myMatrix.GetLength(0), column = myMatrix.GetLength(1);
+        int[,] newMatrix = new int[row,column];
+        
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < column; j++) {
                 newMatrix[i,j] = myMatrix[i,j] * myMatrix[i,j];
             }
         }
